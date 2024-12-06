@@ -11,7 +11,7 @@ from keep_alive import keep_alive
 init(autoreset=True)
 
 status = "online"  # online/dnd/idle
-custom_status = "youtube.com/@SealedSaucer"  # Custom Status
+custom_status = ""  # Custom Status
 
 usertoken = os.getenv("TOKEN")
 if not usertoken:
@@ -40,9 +40,9 @@ async def onliner(token, status):
             "d": {
                 "token": token,
                 "properties": {
-                    "$os": "Windows 10",
-                    "$browser": "Google Chrome",
-                    "$device": "Windows",
+                    "$os": "Mac OS X",
+                    "$browser": "Discord Client",
+                    "$device": "Discord Client",
                 },
                 "presence": {"status": status, "afk": False},
             },
